@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using ProjetoEscola_API.Models; // Erro aqui era using ProjetoEscola_SQLServer.Models;
+// Com o uso do Entity Framework, não manipulamos diretamente o SQL para resgatar ou gravar os dados na tabela no banco de dados.
+// (ORM)
+using ProjetoEscola_API.Models; 
+// Erro aqui era using ProjetoEscola_SQLServer.Models;
 
 namespace ProjetoEscola_API.Data
 
