@@ -128,7 +128,9 @@ namespace ProjetoEscola_API.Controllers
 
                 await _context.SaveChangesAsync();
 
-                return Ok(alunoAlt);
+                //return Ok(alunoAlt);
+
+                return Created($"/api/aluno/{alunoAlt.RA}", alunoAlt);
             }
             catch
             {
